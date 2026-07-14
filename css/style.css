@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #3c3327;
+  background: #fff9ec;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Locked homepage image: show the full image without cropping. */
+.hero {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: center;
+  overflow: hidden;
+  background: #f4efe2;
+  border-bottom: 5px solid #365f2b;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: top center;
+}
+
+.fairy-friends {
+  padding: 72px 24px 64px;
+  background: #fff9ec;
+}
+
+.section-container {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-kicker {
+  margin: 0 0 10px;
+  color: #365f2b;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.fairy-friends h1 {
+  margin: 0;
+  color: #365f2b;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.section-introduction {
+  max-width: 780px;
+  margin: 22px auto 44px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.fairy-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.fairy-card {
+  padding: 18px 18px 30px;
+  background: #ffffff;
+  border: 1px solid #d9cfae;
+  border-radius: 28px;
+  box-shadow: 0 14px 34px rgba(74, 59, 37, 0.12);
+}
+
+.character-space {
+  display: grid;
+  min-height: 360px;
+  place-items: center;
+  padding: 24px;
+  color: #756b5e;
+  background: linear-gradient(135deg, #fff8f0, #eef5e8);
+  border: 2px dashed #9aad8d;
+  border-radius: 20px;
+  font-style: italic;
+}
+
+.fairy-card h2 {
+  margin: 22px 0 8px;
+  font-size: 2rem;
+}
+
+.fairy-card--rosie h2 {
+  color: #d64f7d;
+}
+
+.fairy-card--finn h2 {
+  color: #295aa6;
+}
+
+.fairy-card p {
+  margin: 0 auto;
+  max-width: 440px;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.garden-growing {
+  max-width: 830px;
+  margin: 42px auto 0;
+  padding: 30px;
+  color: #ffffff;
+  background: #365f2b;
+  border-radius: 24px;
+}
+
+.garden-growing h2 {
+  margin: 0 0 10px;
+  color: #fff2bd;
+  font-size: 2rem;
+}
+
+.garden-growing p {
+  margin: 0;
+  font-size: 1.12rem;
+  line-height: 1.65;
+}
+
+.site-footer {
+  padding: 24px;
+  color: #ffffff;
+  background: #294a21;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    height: auto;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  .fairy-friends {
+    padding: 50px 16px;
+  }
+
+  .fairy-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .character-space {
+    min-height: 280px;
+  }
+}
