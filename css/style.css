@@ -49,7 +49,23 @@ body {
   height: auto;
   margin: 0;
 }
+.hero-image-wrap {
+  position: relative;
+  width: 100%;
+}
 
+.hero-link {
+  position: absolute;
+  display: block;
+  z-index: 5;
+}
+
+.hero-link-books {
+  top: 2.5%;
+  left: 20.5%;
+  width: 9%;
+  height: 8%;
+}
 .fairy-friends {
   padding: 72px 24px 64px;
   background: #fff9ec;
