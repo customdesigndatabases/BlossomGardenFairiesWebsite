@@ -24,7 +24,27 @@ body {
   background: #f4efe2;
   border-bottom: 5px solid #365f2b;
 }
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 14px 20px;
+  background: #fff9ec;
+  border-bottom: 2px solid #d9cfae;
+  flex-wrap: wrap;
+}
 
+.main-nav a {
+  color: #365f2b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.main-nav a:hover {
+  color: #d64f7d;
+}
 .hero img {
   display: block;
   width: 100%;
