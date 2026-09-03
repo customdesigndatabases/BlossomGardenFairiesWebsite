@@ -47,7 +47,10 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  margin: 0;
+  max-height: 100vh;
+  object-fit: contain;
+  object-position: top center;
+  margin: 0 auto;
 }
 .hero-image-wrap {
   position: relative;
