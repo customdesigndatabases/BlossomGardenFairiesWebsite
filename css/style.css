@@ -18,10 +18,10 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  border: 0;
   overflow: hidden;
-  background: #fff9ec;
-  border: none;
-}
+  background: transparent;
+  }
 .main-nav {
   display: flex;
   justify-content: center;
@@ -47,14 +47,15 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 100vh;
-  object-fit: contain;
-  object-position: top center;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 .hero-image-wrap {
   position: relative;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-link {
